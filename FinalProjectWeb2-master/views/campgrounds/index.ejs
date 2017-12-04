@@ -41,6 +41,19 @@
       <% }); %>
     </div>
     <div class="col-lg-3 col-md-4 col-sm-12 clsa">
+      <div class="well wlls">
+      <!-- <h2>Search Title Story</h2> -->
+      <h4>Search stories</h4>
+        <!-- <p>Find other's story</p> -->
+        <form action="/story/search" method="GET">
+          <div class="input-group">
+            <input type="text" class="form-control" name="search" placeholder="Search For A Story Here">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div>
+        </form>
+      </div>
       <div class="widget-sidebar">
        <h2 class="title-widget-sidebar">// RECENT POST</h2>
        <%var image = ""%>
@@ -61,18 +74,6 @@
    </div>
    <% }); %>
  </div>
- <div class="well wlls">
-  <h2>Subscription Box</h2>
-  <p>Form Description Goes here</p>
-  <form action="/story/search" method="GET">
-    <div class="input-group">
-      <input type="text" class="form-control" name="search" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-      </span>
-    </div>
-  </form>
-</div>
 </div>
 </div>
 </div>

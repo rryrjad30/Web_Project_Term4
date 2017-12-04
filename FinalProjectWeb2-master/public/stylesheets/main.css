@@ -444,8 +444,12 @@ img.fb-image-lg{
 	border:1px solid #eee;
 	padding: 10px;
 	margin-bottom: 15px;
-	background-image: linear-gradient(lightblue, white);
+	/*background-image: linear-gradient(lightblue, white);*/
 	border-radius: 5px;
+}
+
+.tptd2{
+	margin-left: 15px;
 }
 
 /* Default mode */
@@ -864,6 +868,8 @@ body .no-padding {
 
 .wlls{
 	margin-left: 10px;
+	background-color: #fff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .widget-sidebar {
