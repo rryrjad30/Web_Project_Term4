@@ -136,6 +136,12 @@ h1.font{
 	text-align: center;
 }
 
+/* parallax landing.ejs*/
+img.imgas{
+	width: 100%;
+	height: 650px;
+}
+
 /*footer*/
 #myFooter{
 	width: 100%;
@@ -815,27 +821,33 @@ body .no-padding {
 
 /* index.ejs */
 .ctrsad{
-	background-image: linear-gradient(lightblue, white);
+	/*background-image: linear-gradient(lightgreen, lightyellow);*/
+	padding-top: 10px;
 }
 
-.ctridxs{
-	margin-left: -60px;
+.ctrlol{
+	background-image: url("../images/2.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
 .jbidx{
 	margin-top: 20px;
 	background-color: transparent;
+	color: white;
 }
 
 .btnidx{
-	color: black;
+	/*color: black;*/
 	background-color: transparent;
-	border-color: #99cfe0;
+	/*border-color: #99cfe0;*/
+	border-color: lightgrey;
 	border-width: 3px;
 }
 
 .btnidx:hover{
-	background-color: lightblue;
+	background-color: lightgreen;
 	border-color: lightyellow;
 }
 
