@@ -292,7 +292,7 @@ div.sb2{
 div.ctnhdr-2{
 	padding-right: 0px;
 	border-bottom: 1px groove silver;
-	background-color: lightgrey;
+	/*background-color: lightgrey;*/
 }
 
 /*login.ejs & register.ejs*/
@@ -849,6 +849,73 @@ body .no-padding {
 .btnidx:hover{
 	background-color: lightgreen;
 	border-color: lightyellow;
+}
+
+.blogShort{ 
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-bottom:1px solid #ddd;
+}
+
+.clsa{
+	margin-left: 15px;
+	border-left: 1px solid #ddd;
+}
+
+.wlls{
+	margin-left: 10px;
+}
+
+.widget-sidebar {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.title-widget-sidebar {
+    font-size: 14pt;
+    border-bottom: 2px solid #e5ebef;
+    margin-bottom: 15px;
+    padding-bottom: 10px;    
+    margin-top: 0px;
+}
+
+.title-widget-sidebar:after {
+    border-bottom: 2px solid #f1c40f;
+    width: 150px;
+    display: block;
+    position: absolute;
+    content: '';
+    padding-bottom: 10px;
+}
+
+.recent-post{
+	width: 100%;
+	height: 80px;
+	list-style-type: none;
+}
+
+.post-img img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.recent-post a {
+	text-decoration: none;
+	color:#34495E;
+	transition: 0.5s;
+}
+.post-img, .recent-post a:hover{
+	color:#F39C12;
+}
+.post-img img:hover{
+	border: 5px solid #F39C12;
 }
 
 /**/

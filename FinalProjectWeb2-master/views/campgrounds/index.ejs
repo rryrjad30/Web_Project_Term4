@@ -10,26 +10,11 @@
 </div>
 <div class="container ctrsad">
  <div class="container">
-   <div class="row">
-     <div class="col-sm-2"></div>
-     <div class="col-sm-8">
-       <form class="form-control fcidx1" action="/story/search" method="GET">
-         <div class="input-group">
-           <input type="text" class="form-control input-sm" name="search" placeholder="Search"/>
-           <span class="input-group-btn">
-             <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-search"></span>  
-             </button>
-           </span>
-         </div>
-       </form>
-     </div>
-   </div>
-   <div class="row">
-     <div class="col-sm-2"></div>
+   <div class="blogShort"></div>
+   <div class="row blogShort">
      <div class="col-sm-8">
       <%var image = ""%>
       <% campgrounds.reverse().forEach(function(campground){ %>
-      
       <div class="panel panel-white post panel-shadow">
         <div class="post-heading">
           <div class="pull-left image">
@@ -55,7 +40,41 @@
       </div>
       <% }); %>
     </div>
-  </div>
+    <div class="col-lg-3 col-md-4 col-sm-12 clsa">
+      <div class="widget-sidebar">
+       <h2 class="title-widget-sidebar">// RECENT POST</h2>
+       <%var image = ""%>
+       <% campgrounds.reverse().forEach(function(campground){ %>
+       <div class="content-widget-sidebar">
+        <ul>
+         <li class="recent-post">
+          <div class="post-img">
+           <img src="<%=campground.author.image%>" class="img-responsive">
+         </div>
+         <%console.log(campground.image)%>
+         <a href="/biodata/<%=campground.author.id%>"><h5><%=campground.author.username%></h5></a>
+         <p><%= campground.name %></p>
+         <p><small><i class="fa fa-calendar" data-original-title="" title=""></i>&nbsp;&nbsp;<%= moment(campground.createdAt).fromNow() %></small></p>
+       </li>
+       <hr>
+     </ul>
+   </div>
+   <% }); %>
+ </div>
+ <div class="well wlls">
+  <h2>Subscription Box</h2>
+  <p>Form Description Goes here</p>
+  <form action="/story/search" method="GET">
+    <div class="input-group">
+      <input type="text" class="form-control" name="search" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+      </span>
+    </div>
+  </form>
+</div>
+</div>
+</div>
 </div>
 </div>
 <% include ../partials/footer %>
